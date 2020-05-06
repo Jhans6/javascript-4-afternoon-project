@@ -14,8 +14,13 @@
   The values for the make and model will come from two parameters, make and model (in that order).
 */
 
-// Code here
+function CarFactory(make, model){
+  this.make = make;
+  this.model = model;
+}
 
+const porche911 = new CarFactory('porche', '911')
+const tesla = new CarFactory('tesla', 'modelX')
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
@@ -33,7 +38,7 @@ function Employee(name, email, hireDate) {
     Assign the result of the invocation to a variable called bob.
   */
   
-  // Code here
+  let bob = new Employee('Bob', 'bob@gmail.com', '01-02-98')
   
   ////////// PROBLEM 3 //////////
   
@@ -56,7 +61,13 @@ function Employee(name, email, hireDate) {
       invoking moveCar on the right object (prius vs mustang).
   */
   
-  // Code here
+function Car(make, model, year){
+  this.move=0;
+  this.moveCar = function(){
+    this.move += 10;
+    return this.move 
+  }
+}
   
   ////////// PROBLEM 4 //////////
   
@@ -75,7 +86,7 @@ function Employee(name, email, hireDate) {
     this.rating = rating;
   }
   
-  // Code here
+ 
   
   ////////// PROBLEM 5 //////////
   
